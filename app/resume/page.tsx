@@ -28,6 +28,7 @@ const knowledge = [
 const employmentHistory = [
   {
     position: "Thalchour Sec. School",
+    address: "Bajhang, Nepal",
     duration: "2005 - 2015",
     description:
       "Completed my high school education and successfully achieved my SLC (School Leaving Certificate). This phase laid the foundation for my academic and professional growth.",
@@ -35,6 +36,7 @@ const employmentHistory = [
   },
   {
     position: "Takshashila Academy",
+    address: "Kathmandu, Nepal",
     duration: "2016 - 2018",
     description:
       "Completed my +2 education in Science, focusing on preparing me for a career in technology and engineering.",
@@ -42,12 +44,14 @@ const employmentHistory = [
   },
   {
     position: "Universal Engineering College",
+    address: "Lalitpur,Nepal",
     duration: "2019 - 2024",
     description:
       "Pursuing a Bachelor's degree in Computer Engineering, specializing in software development, algorithms, and system design. Gained hands-on experience with modern technologies and completed several academic projects.",
   },
   {
     position: "Web Developer at Graycode Technology",
+    address: "Pulchowk, Lalitpur",
     duration: "Jan 2024 - Present",
     description:
       "Currently working as a Frontend Developer specializing in React.js, Next.js, JavaScript, and TypeScript. Contributing to building robust, scalable, and user-friendly web applications while collaborating with cross-functional teams.",
@@ -134,6 +138,7 @@ const Index: FC = () => {
                 <div className="trm-card-header">
                   <div className="trm-left-side">
                     <h6 className="trm-mb-15">{job.position}</h6>
+                    <p className="trm-mb-15">{job.address}</p>
                     <div className="trm-text-sm trm-accent-color trm-mb-15">
                       <i>{job.duration}</i>
                     </div>
