@@ -31,7 +31,7 @@ const VideoPopup_ = ({ close, videoID }: VideoPopupProps) => {
               >
                 ×
               </button>
-              <ReactPlayer url={videoID} playing={true} />
+              <ReactPlayer url={videoID || ""} playing={true} />
             </div>
           </div>
           <div className="mfp-preloader">Loading...</div>

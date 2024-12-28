@@ -35,21 +35,23 @@
       ],
       "@lib/*": [
         "lib/*"
-      ] // Added path for `lib` folder
+      ]
     },
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "target": "ES2017"
+    "target": "ES2017",
+    "typeRoots": ["./node_modules/@types", "./types"], // Added to include custom type declarations
+    "strict": true
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/blog/page.tsx"
+    "types/**/*.d.ts" // Ensure custom types folder is included
   ],
   "exclude": [
     "node_modules"
