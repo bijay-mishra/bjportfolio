@@ -12,9 +12,10 @@ import Testimonials from '../../components/Testimonials';
 import History from '../../components/History';
 import Price from '../../components/Price';
 import Contact from '../../components/Contact';
+import Seo from 'components/Seo';
 
 const Index: FC = () => {
-  const { banner_image_function, banner_type_function } = useContext(context);
+  const { banner_image_function, banner_type_function } = useContext<any>(context||null);
 
   useEffect(() => {
     banner_image_function("/img/banner2.jpg");
@@ -23,6 +24,11 @@ const Index: FC = () => {
 
   return (
     <TrueManLayout onePage={true}>
+       {/* <Seo
+        title="Bijaya Mishra - Home"
+        description="Welcome to Bijaya Mishra's portfolio. Discover my skills, projects, and experience in web development."
+        url="https://bijayamishra.com.np"
+      /> */}
       <Counter />
       <Story/>
       <VideoResume />

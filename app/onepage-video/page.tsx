@@ -12,9 +12,10 @@ import History from '../../components/History';
 import Price from '../../components/Price';
 import Testimonials from '../../components/Testimonials';
 import Contact from '../../components/Contact';
+import Seo from 'components/Seo';
 
 const Index: FC = () => {
-  const { banner_type_function }: { banner_type_function: (type: string) => void } = useContext(context);
+  const { banner_type_function }: { banner_type_function: (type: string) => void } = useContext<any>(context||null);
   
   useEffect(() => {
     banner_type_function("video");
@@ -22,6 +23,11 @@ const Index: FC = () => {
 
   return (
     <TrueManLayout onePage={true}>
+       {/* <Seo
+        title="Bijaya Mishra - Home"
+        description="Welcome to Bijaya Mishra's portfolio. Discover my skills, projects, and experience in web development."
+        url="https://bijayamishra.com.np"
+      /> */}
       <Counter />
       <Story />
       <VideoResume />

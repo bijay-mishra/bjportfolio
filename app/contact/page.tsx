@@ -1,11 +1,14 @@
 "use client"
 import React, { FC, useContext, useEffect } from 'react';
 import Link from "next/link";
-import { context } from '../../context/context';
+
 import TrueManLayout from '../../layout/TrueManLayout';
+import Seo from 'components/Seo';
+import { context } from 'context/context';
+
 
 const Index: FC = () => {
-  const { banner_image_function, page_info_function } = useContext(context);
+  const { banner_image_function, page_info_function } = useContext<any>(context|| null);
 
   useEffect(() => {
     page_info_function(
@@ -17,6 +20,11 @@ const Index: FC = () => {
 
   return (
     <TrueManLayout>
+       {/* <Seo
+        title="Bijaya Mishra - Home"
+        description="Welcome to Bijaya Mishra's portfolio. Discover my skills, projects, and experience in web development."
+        url="https://bijayamishra.com.np"
+      /> */}
       <div className="row">
         <div className="col-lg-6">
           <div

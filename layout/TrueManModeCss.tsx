@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { context } from "../context/context";
 
 const TrueManModeCss: React.FC = () => {
-  const { mode } = useContext(context);
+  const { mode } = useContext<any>(context||null);
   return (
     <head>
       <link

@@ -1,6 +1,5 @@
 "use client";
-import { useContext, useEffect } from "react";
-import { context } from "../context/context";
+
 import TrueManLayout from "../layout/TrueManLayout";
 import Counter from "../components/Counter";
 import Story from "../components/Story";
@@ -10,6 +9,9 @@ import Price from "../components/Price";
 
 import Publications from "../components/Publications";
 import Testimonials from "components/Testimonials";
+import Seo from "components/Seo";
+import { useContext, useEffect } from "react";
+import { context } from "context/context";
 // import { AnimatedTestimonials } from "components/Testimonials";
 // import { AnimatedTestimonials } from "components/Testimonials";
 
@@ -35,7 +37,7 @@ const Index: React.FC = () => {
   //     src: "https://via.placeholder.com/500",
   //   },
   // ];
-  const { banner_image_function, banner_type_function } = useContext(context);
+  const { banner_image_function, banner_type_function } = useContext<any>(context||null);
 
   useEffect(() => {
     banner_image_function("/img/banner2.jpg");
@@ -44,6 +46,11 @@ const Index: React.FC = () => {
 
   return (
     <TrueManLayout>
+       {/* <Seo
+        title="Bijaya Mishra - Home"
+        description="Welcome to Bijaya Mishra's portfolio. Discover my skills, projects, and experience in web development."
+        url="https://bijayamishra.com.np"
+      /> */}
       {/* stats */}
       <Counter />
       {/* stats end */}

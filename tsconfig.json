@@ -18,18 +18,31 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@css/*": ["public/css/*"],
-      "@components/*": ["app/components/*"],
-      "@layout/*": ["app/layout/*"],
-      "@context/*": ["app/context/*"],
-      "@utility/*": ["utility/*"],
-      "@lib/*": ["lib/*"]  // Added path for `lib` folder
+      "@css/*": [
+        "public/css/*"
+      ],
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@layout/*": [
+        "app/layout/*"
+      ],
+      "@context/*": [
+        "app/context/*"
+      ],
+      "@utility/*": [
+        "utility/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ] // Added path for `lib` folder
     },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",

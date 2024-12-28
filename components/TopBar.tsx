@@ -9,7 +9,7 @@ interface TopBarProps {
 
 const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
   const [toggle, setToggle] = useState<boolean>(false);
-  const { modeChange, mode } = useContext(context);
+  const { modeChange, mode } = useContext<any>(context||null);
 
   useEffect(() => {
     modeChange(JSON.parse(localStorage.getItem("trueman") || "false"));

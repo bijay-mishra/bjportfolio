@@ -10,7 +10,7 @@ interface BannerProps {
 }
 
 const Banner: React.FC<BannerProps> = ({ centerTitle }) => {
-  const { banner_type, banner_image, page_info } = useContext(context);
+  const { banner_type, banner_image, page_info } = useContext<any>(context||null);
   const { pageTitle, subTitle, pageName, scroll_down } = page_info;
 
   switch (banner_type) {
