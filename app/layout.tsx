@@ -14,7 +14,8 @@ import StateProvider from "../context/context";
 
 export const metadata = {
   title: "Bijay",
-  description: "Software Developer",
+  description: "Computer Engineer",
+  image: "/img/avatar.jpg",
 };
 
 interface RootLayoutProps {
@@ -27,24 +28,24 @@ export default function RootLayout({ children }: RootLayoutProps) {
       {/* <head>
         <DefaultSeo {...seoConfig} />
       </head> */}
-      <body>
-        {/* Wrap the app with StateProvider */}
         <StateProvider>
           <TrueManModeCss />
+      <body>
+        {/* Wrap the app with StateProvider */}
           <div className="trm-app-frame">
             <Preloader />
             <div id="trm-dynamic-content" className="trm-swup-animation">
               <div
                 id="trm-scroll-container"
                 className="trm-scroll-container"
-                style={{ opacity: 0 }} // Ensure this is handled appropriately
+                style={{ opacity: 0 }}
               >
                 {children}
               </div>
             </div>
           </div>
-        </StateProvider>
       </body>
+        </StateProvider>
     </html>
   );
 }

@@ -12,7 +12,7 @@ import Publications from '../../components/Publications';
 import Seo from 'components/Seo';
 
 const Index: FC = () => {
-  const { banner_type_function }: { banner_type_function: (type: string) => void } = useContext<any>(context||null);
+  const { banner_type_function }: { banner_type_function: (type: string) => void } = useContext(context);
   
   useEffect(() => {
     banner_type_function("video");

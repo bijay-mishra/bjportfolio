@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { context } from "../context/context";
@@ -9,11 +10,13 @@ interface TopBarProps {
 
 const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
   const [toggle, setToggle] = useState<boolean>(false);
-  const { modeChange, mode } = useContext<any>(context||null);
+  const { modeChange, mode } = useContext<any>(context); // Use the context with modeChange and mode.
+// console.log("TopBar -> mode", mode);
 
   useEffect(() => {
+    // Set the initial mode from localStorage (if available).
     modeChange(JSON.parse(localStorage.getItem("trueman") || "false"));
-  }, []);
+  }, [modeChange]);
 
   return (
     <div
@@ -40,45 +43,26 @@ const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
                 <OnePageMenu />
               ) : (
                 <ul>
-                  <li className="menu-item-has-children">
+                  <li>
                     <Link legacyBehavior href="/">
                       Home
                     </Link>
-                    {/* <ul>
-                      <li>
-                        <Link legacyBehavior href="/">
-                          Image
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="home-video">
-                          Video
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="home-slideshow">
-                          Slideshow
-                        </Link>
-                      </li>
-                    </ul> */}
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link legacyBehavior href="portfolio">
-                      Portfolio
-                    </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="resume">
+                    <Link href="/portfolio">Portfolio</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="/resume">
                       Resume
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="contact">
+                    <Link legacyBehavior href="/contact">
                       Contact
                     </Link>
                   </li>
-                  <li className="menu-item-has-children">
-                    <Link legacyBehavior href="blog">
+                  <li>
+                    <Link legacyBehavior href="/blog">
                       Blog
                     </Link>
                   </li>
@@ -86,11 +70,13 @@ const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
               )}
             </nav>
           </div>
+
+          {/* mode switcher place */}
           <div className="trm-mode-switcher-place">
             <div className="trm-mode-switcher">
               <i className="far fa-sun" />
               <input
-                onChange={(e) => {
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   localStorage.setItem("trueman", String(e.target.checked));
                   modeChange(e.target.checked);
                 }}
@@ -103,10 +89,18 @@ const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
               <i className="far fa-moon" />
             </div>
           </div>
-          <a href="/files/bjmishra.pdf" download="bjmishra.pdf" className="trm-btn trm-btn-sm">
-  Download CV <i className="fas fa-arrow-down" />
-</a>
+
+          {/* mode switcher place end */}
+
+          <a
+            href="/files/bjmishra.pdf"
+            download="bjmishra.pdf"
+            className="trm-btn trm-btn-sm"
+          >
+            Download CV <i className="fas fa-arrow-down" />
+          </a>
         </div>
+
         <div
           className={`trm-menu-btn ${toggle ? "trm-active" : ""}`}
           onClick={() => setToggle(!toggle)}
@@ -117,6 +111,7 @@ const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
     </div>
   );
 };
+
 export default TopBar;
 
 const OnePageMenu: React.FC = () => {

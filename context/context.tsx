@@ -66,6 +66,8 @@ const StateProvider = (props: { children: ReactNode }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const modeChange = useCallback((value: boolean) => {
+    console.log("modeChange -> value", value);
+    
     dispatch({
       type: MODE,
       payload: value,

@@ -59,7 +59,7 @@ const employmentHistory = [
 ];
 
 const Index: FC = () => {
-  const { banner_image_function, page_info_function } = useContext<any>(context||null);
+  const { banner_image_function, page_info_function } = useContext(context);
 
   useEffect(() => {
     banner_image_function("/img/banner2.jpg");

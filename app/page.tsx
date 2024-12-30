@@ -37,7 +37,7 @@ const Index: React.FC = () => {
   //     src: "https://via.placeholder.com/500",
   //   },
   // ];
-  const { banner_image_function, banner_type_function } = useContext<any>(context||null);
+  const { banner_image_function, banner_type_function } = useContext(context);
 
   useEffect(() => {
     banner_image_function("/img/banner2.jpg");
