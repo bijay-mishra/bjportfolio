@@ -40,7 +40,7 @@ const Image: React.FC = () => {
                 </h1>
                 <a
                   data-fancybox=""
-                  href="https://www.youtube.com/watch?v=Mo_vRjtkgSI"
+                  href="https://www.youtube.com/watch?v=bRrIhgn52m0&list=PLLBWNs6n7YMUihYEVNEUGB29t3Rfq6bTa&index=3"
                   className="trm-btn trm-btn-border"
                 >
                   Video Resume <i className="fas fa-play" />

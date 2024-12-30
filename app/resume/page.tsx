@@ -56,6 +56,12 @@ const employmentHistory = [
     description:
       "Currently working as a Frontend Developer specializing in React.js, Next.js, JavaScript, and TypeScript. Contributing to building robust, scalable, and user-friendly web applications while collaborating with cross-functional teams.",
   },
+  {
+    position: "Trainings and Certifications",
+    address: "Jamal, Kathmandu",
+    duration: "Full Stack Web Development",
+     diploma: "files/diploma.jpg",
+  },
 ];
 
 const Index: FC = () => {
@@ -145,15 +151,15 @@ const Index: FC = () => {
                   </div>
                 </div>
                 <div className="trm-mb-20">{job.description}</div>
-                {/* {job.diploma && (
+                {job.diploma && (
                   <a
                     data-fancybox
                     href={job.diploma}
                     className="trm-label trm-label-color"
                   >
-                    Diploma <i className="fas fa-arrow-right" />
+                   View Certificate <i className="fas fa-arrow-right" />
                   </a>
-                )} */}
+                )}
               </div>
             </div>
           </div>
