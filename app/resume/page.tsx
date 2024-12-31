@@ -58,8 +58,10 @@ const employmentHistory = [
   },
   {
     position: "Trainings and Certifications",
-    address: "Jamal, Kathmandu",
+    address: "Dursikshya Educational Network",
     duration: "Full Stack Web Development",
+     description:
+      "Jamal, Kathmandu",
      diploma: "files/diploma.jpg",
   },
 ];
