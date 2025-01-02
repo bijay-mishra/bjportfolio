@@ -13,7 +13,7 @@ import StateProvider from "../context/context";
 // import seoConfig from "@lib/seo.config";
 
 export const metadata = {
-  title: "Bijay-Computer Engineer",
+  title: "Bijay-Mishra",
   description: "Computer Engineer",
   image: "/img/avatar.jpg",
 };
