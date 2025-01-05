@@ -22,7 +22,7 @@
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.1",
     "react-player": "^2.14.1",
-    "react-toastify": "^11.0.0",
+    "react-toastify": "^11.0.2",
     "swiper": "^11.1.15",
     "tailwind-merge": "^2.5.5"
   },

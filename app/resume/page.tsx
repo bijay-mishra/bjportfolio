@@ -27,7 +27,7 @@ const knowledge = [
 
 const employmentHistory = [
   {
-    position: "Thalchour Sec. School",
+    position: "Thalchour Secondary School",
     address: "Bajhang, Nepal",
     duration: "2005 - 2015",
     description:
@@ -43,7 +43,7 @@ const employmentHistory = [
     // diploma: "files/diploma.jpg",
   },
   {
-    position: "Universal Engineering College",
+    position: "Universal Engineering & Science College",
     address: "Lalitpur,Nepal",
     duration: "2019 - 2024",
     description:
