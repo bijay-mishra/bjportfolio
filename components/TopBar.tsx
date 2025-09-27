@@ -93,8 +93,8 @@ const TopBar: React.FC<TopBarProps> = ({ onePage }) => {
           {/* mode switcher place end */}
 
           <a
-            href="/files/bjmishra.pdf"
-            download="bjmishra.pdf"
+            href="/files/bijaycv.pdf"
+            download="bijaycv.pdf"
             className="trm-btn trm-btn-sm"
           >
             Download CV <i className="fas fa-arrow-down" />

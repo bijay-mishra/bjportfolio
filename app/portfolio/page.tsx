@@ -11,14 +11,14 @@ interface PortfolioItem {
 }
 
 const portfolioItems: PortfolioItem[] = [
-  { id: 1, img: "/img/portfolio/11.jpg", title: "IES website" },
-  { id: 2, img: "/img/portfolio/22.jpg", title: "Bank Website" },
-  { id: 3, img: "/img/portfolio/33.jpg", title: "Company Website" },
-  { id: 4, img: "/img/portfolio/44.jpg", title: "Super Market" },
-  { id: 5, img: "/img/portfolio/55.jpg", title: "Music Player" },
-  { id: 6, img: "/img/portfolio/66.jpg", title: "Big Basket" },
-  { id: 5, img: "/img/portfolio/77.jpg", title: "Food Delivery" },
-  { id: 6, img: "/img/portfolio/88.jpg", title: "Dashboard" },
+  { id: 1, img: "/img/portfolio/pumori.jpg", title: "Pumori Enterprise- Core Banking" },
+  { id: 2, img: "/img/portfolio/erp.jpg", title: "ERP-Valley Cold Store" },
+  { id: 3, img: "/img/portfolio/hms.jpg", title: "HMS-Hotel Management System" },
+  { id: 4, img: "/img/portfolio/finmax.jpg", title: "Finmax Salesapp" },
+  { id: 5, img: "/img/portfolio/22.jpg", title: "Bank Website" },
+  { id: 6, img: "/img/portfolio/11.jpg", title: "IES website" },
+  { id: 7, img: "/img/portfolio/44.jpg", title: "Super Market" },
+  
 ];
 
 const Index: FC = () => {
