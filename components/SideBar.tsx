@@ -58,17 +58,25 @@ const SideBar: React.FC = () => {
             {/* country */}
             <li>
               <div className="trm-label">Residence:</div>
-              <div className="trm-label trm-label-light">Nepal</div>
+              <div className="trm-label trm-label-light">Kathmandu, Nepal</div>
             </li>
             {/* city */}
             <li>
-              <div className="trm-label">City:</div>
-              <div className="trm-label trm-label-light">Kathmandu</div>
+              <div className="trm-label">Work:</div>
+              <div className="trm-label trm-label-light">Riddhasoft Pvt. Ltd.</div>
+            </li>
+             <li>
+              <div className="trm-label">Position:</div>
+              <div className="trm-label trm-label-light">Software Developer</div>
+            </li>
+            <li>
+              <div className="trm-label">Duration:</div>
+              <div className="trm-label trm-label-light">Feb 2024-Present</div>
             </li>
             {/* age */}
             <li>
               <div className="trm-label">Age:</div>
-              <div className="trm-label trm-label-light">24</div>
+              <div className="trm-label trm-label-light">25</div>
             </li>
           </ul>
           {/* info end */}
