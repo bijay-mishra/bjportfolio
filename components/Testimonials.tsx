@@ -17,13 +17,7 @@ const testimonialsData = [
       "Bijay is a skilled React.js and Next.js developer who delivers user-friendly, efficient solutions. His attention to detail and problem-solving abilities make him an invaluable team player!",
     imgSrc: "/img/testimonials/2.jpg",
   },
-  {
-    name: "Bhuvan Joshi",
-    title: "Software Engineer",
-    testimonial:
-      "Bijay’s expertise in React.js and Next.js is remarkable. His ability to deliver dynamic, scalable solutions while maintaining a collaborative and professional approach is commendable. A highly dependable developer!",
-    imgSrc: "/img/testimonials/3.jpg",
-  },
+  
 ];
 
 const Testimonials: React.FC = () => {

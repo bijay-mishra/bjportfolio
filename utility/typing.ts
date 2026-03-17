@@ -2,10 +2,10 @@ export const typing = () => {
   const text = document.querySelector(".trm-typed-text") as HTMLElement;
 
   const words: string[] = [
-    "Web Developer",
-    "Reactjs developer",
+    "React developer",
+    "App Developer",
     "Nextjs Developer",
-    "UI/UX Designer",
+    "Dot net Developer",
   ];
 
   setTyper(text, words);

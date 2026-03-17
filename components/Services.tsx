@@ -78,6 +78,77 @@ const Services: React.FC = () => {
         {/* service end */}
       </div>
       <div className="col-lg-6">
+  {/* service */}
+  <div
+    className="trm-service-icon-box trm-scroll-animation"
+    data-scroll=""
+    data-scroll-offset={40}
+  >
+    <div className="trm-service-content">
+      <div className="trm-icon">
+        <img
+          src="/img/icons/icon-5.svg"
+          alt="icon"
+          className="trm-black-icon"
+        />
+        <img
+          src="/img/icons/icon-5w.svg"
+          alt="icon"
+          className="trm-white-icon"
+        />
+      </div>
+      <h6 className="trm-mb-20">.NET Development</h6>
+      <div className="trm-mb-20">
+        Build secure and high-performance backend systems using ASP.NET and modern .NET technologies.
+      </div>
+      <a
+        data-fancybox=""
+        href="#trm-order"
+        className="trm-label trm-label-color"
+      >
+        Order now <i className="fas fa-arrow-right" />
+      </a>
+    </div>
+  </div>
+  {/* service end */}
+</div>
+
+<div className="col-lg-6">
+  {/* service */}
+  <div
+    className="trm-service-icon-box trm-scroll-animation"
+    data-scroll=""
+    data-scroll-offset={40}
+  >
+    <div className="trm-service-content">
+      <div className="trm-icon">
+        <img
+          src="/img/icons/icon-6.svg"
+          alt="icon"
+          className="trm-black-icon"
+        />
+        <img
+          src="/img/icons/icon-6w.svg"
+          alt="icon"
+          className="trm-white-icon"
+        />
+      </div>
+      <h6 className="trm-mb-20">React Native Development</h6>
+      <div className="trm-mb-20">
+        Develop cross-platform mobile applications with React Native for smooth performance on both Android and iOS.
+      </div>
+      <a
+        data-fancybox=""
+        href="#trm-order"
+        className="trm-label trm-label-color"
+      >
+        Order now <i className="fas fa-arrow-right" />
+      </a>
+    </div>
+  </div>
+  {/* service end */}
+</div>
+      <div className="col-lg-6">
         {/* service */}
         <div
           className="trm-service-icon-box trm-scroll-animation"

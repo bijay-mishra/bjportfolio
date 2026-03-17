@@ -12,12 +12,14 @@ interface PortfolioItem {
 
 const portfolioItems: PortfolioItem[] = [
   { id: 1, img: "/img/portfolio/pumori.jpg", title: "Pumori Enterprise- Core Banking" },
-  { id: 2, img: "/img/portfolio/erp.jpg", title: "ERP-Valley Cold Store" },
+  { id: 2, img: "/img/portfolio/erp.jpeg", title: "ERP-Valley Cold Store" },
   { id: 3, img: "/img/portfolio/hms.jpg", title: "HMS-Hotel Management System" },
-  { id: 4, img: "/img/portfolio/finmax.jpg", title: "Finmax Salesapp" },
+  { id: 4, img: "/img/portfolio/finmax.jpeg", title: "Finmax Salesapp" },
   { id: 5, img: "/img/portfolio/22.jpg", title: "Bank Website" },
   { id: 6, img: "/img/portfolio/11.jpg", title: "IES website" },
   { id: 7, img: "/img/portfolio/44.jpg", title: "Super Market" },
+  { id: 8, img: "/img/portfolio/licence.jpeg", title: "Engineering Licence Nepal App" },
+  { id: 9, img: "/img/portfolio/expense.jpeg", title: "Expense Tracker App" },
   
 ];
 

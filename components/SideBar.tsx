@@ -5,10 +5,28 @@ const SideBar: React.FC = () => {
   useEffect(() => {
     typing();
   }, []);
+  const calculateAge = (dob: string | Date) => {
+  const birthDate = new Date(dob);
+  const today = new Date();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+
+  // adjust if birthday hasn't occurred yet this year
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && today.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+};
+const dob = "2000-05-06";
 
   return (
     <div className="col-lg-4">
-      {/* main card */}
       <div className="trm-main-card-frame trm-sidebar">
         <div
           className="trm-main-card"
@@ -18,7 +36,6 @@ const SideBar: React.FC = () => {
           data-scroll-target="#content"
           data-scroll-offset={60}
         >
-          {/* card header */}
           <div className="trm-mc-header">
             <div className="trm-avatar-frame trm-mb-20">
               <img className="trm-avatar" src="/img/avatar.jpg" alt="Avatar" />
@@ -26,16 +43,12 @@ const SideBar: React.FC = () => {
             </div>
             <h5 className="trm-name trm-mb-15">Bijay Mishra</h5>
             <div className="trm-label">
-              {/* after i'm content in typing.ts */}
               I`m{" "}
               <span className="trm-typed-text">
-                {/* Words for rotation: js/main.js line 34 */}
               </span>
             </div>
           </div>
-          {/* card header end */}
           <div className="trm-divider trm-mb-40 trm-mt-40" />
-          {/* sidebar social */}
           <div className="trm-social">
             <a href="https://www.linkedin.com/in/bijay-mishra-574863288/" target="_blank">
               <i className="fab fa-linkedin-in" />
@@ -50,17 +63,12 @@ const SideBar: React.FC = () => {
               <i className="fab fa-twitter" />
             </a>
           </div>
-
-          {/* sidebar social end */}
           <div className="trm-divider trm-mb-40 trm-mt-40" />
-          {/* info */}
           <ul className="trm-table trm-mb-20">
-            {/* country */}
             <li>
               <div className="trm-label">Residence:</div>
               <div className="trm-label trm-label-light">Kathmandu, Nepal</div>
             </li>
-            {/* city */}
             <li>
               <div className="trm-label">Work:</div>
               <div className="trm-label trm-label-light">Riddhasoft Pvt. Ltd.</div>
@@ -73,11 +81,12 @@ const SideBar: React.FC = () => {
               <div className="trm-label">Duration:</div>
               <div className="trm-label trm-label-light">Feb 2024-Present</div>
             </li>
-            {/* age */}
-            <li>
-              <div className="trm-label">Age:</div>
-              <div className="trm-label trm-label-light">25</div>
-            </li>
+           <li>
+  <div className="trm-label">Age:</div>
+  <div className="trm-label trm-label-light">
+    {calculateAge(dob)}
+  </div>
+</li>
           </ul>
           {/* info end */}
           <div className="trm-divider trm-mb-40 trm-mt-40" />
