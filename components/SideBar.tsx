@@ -69,18 +69,18 @@ const dob = "2000-05-06";
               <div className="trm-label">Residence:</div>
               <div className="trm-label trm-label-light">Kathmandu, Nepal</div>
             </li>
-            <li>
+            {/* <li>
               <div className="trm-label">Work:</div>
               <div className="trm-label trm-label-light">Riddhasoft Pvt. Ltd.</div>
-            </li>
+            </li> */}
              <li>
               <div className="trm-label">Position:</div>
               <div className="trm-label trm-label-light">Software Developer</div>
             </li>
-            <li>
+            {/* <li>
               <div className="trm-label">Duration:</div>
               <div className="trm-label trm-label-light">Feb 2024-Present</div>
-            </li>
+            </li> */}
            <li>
   <div className="trm-label">Age:</div>
   <div className="trm-label trm-label-light">
